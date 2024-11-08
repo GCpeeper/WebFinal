@@ -7,3 +7,27 @@ body {
     background-color: #363b37;
     color: #111;
 }
+
+.rounded {
+    border-radius: 10px;
+}
+
+.btn-sub {
+    background-color: #4f5532;
+    color: #111;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #b3cf4c;
+    transition: background-color border 0.3s ease;
+}
+
+.btn-sub:hover {
+    background-color: #424728; /* Darker green */
+    border: 3px solid #a0b946; /* Lighter green */
+
+}
