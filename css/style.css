@@ -1,5 +1,5 @@
 .navbar-color {
-    background-color: #5D643A;
+    background-color: #424728;
     color: #111;
 }
 
@@ -8,8 +8,14 @@ body {
     color: #111;
 }
 
+hr {
+    border: 1.5px solid #111;
+}
+
+
+
 .rounded {
-    border-radius: 10px;
+    border-radius: 50%px;
 }
 
 .btn-sub {
@@ -30,4 +36,25 @@ body {
     background-color: #424728; /* Darker green */
     border: 3px solid #a0b946; /* Lighter green */
 
+}
+
+.link {
+    color: initial;
+    text-decoration: none;
+} 
+
+.footer-background {
+    background-color: #424728;
+    color: #ffffff;
+}
+
+.form-font {
+    color: #a3a3a3;
+}
+
+p {
+    color: #a3a3a3;
+    font-family: "mingler", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
