@@ -62,3 +62,14 @@ p {
     font-weight: 200;
     font-style: normal;
 }
+
+.center-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 300%;
+    height: auto;
+}
