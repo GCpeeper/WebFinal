@@ -34,7 +34,7 @@
                   <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Articles</a>
+                  <a class="nav-link" href="articles.html">Articles</a>
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@
           <img src="images/DLC.png" alt="Brotato" class="img-fluid mx-auto" style="height: auto; width: 100%;">
         </div>
         <div class="col-md-5 center-img">
-          <img src="images/splash_art_dlc.png" alt="Brotato" class="img-fluid rounded mx-auto" style="height: auto; width: 100%;">
+          <img src="images/splash_art_dlc.png" alt="Brotato" class="img-fluid rounded mx-auto scale" style="height: auto; width: 100%;">
         </div>
         <div class="col-md-2">
 
@@ -149,11 +149,29 @@
     <br>
 
     <script>
-      const images = document.getElementsByClassName('scale');
+      
 
-      for (let i = 0; i < images.length; i++) {
-        images[i].style.transform = 'scale(1.4)';
-      }
+       // Function to scale image width
+       function scaleImage() {
+            const screenWidth = window.innerWidth;
+            const percentage = 0.3; // 30% of the screen width
+            const newWidth = screenWidth * percentage;
+
+            // Set a minimum width of 600px so the image don't get too small
+            if (newWidth < 600) {
+              newWidth = 600;
+            }
+            const images = document.getElementsByClassName('scale');
+            for (let i = 0; i < images.length; i++) {
+              images[i].style.width =  newWidth + 'px';
+            }
+        }
+
+        // Call the function on page load
+        window.onload = scaleImage;
+
+        // Optional: Call the function on window resize to keep the image responsive
+        window.onresize = scaleImage;
     </script>
     
     
