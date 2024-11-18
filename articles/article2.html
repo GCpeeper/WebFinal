@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blobfish</title>
+    <link rel="icon" type="image/x-icon" href="images/blobfish-logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="..\css\style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-color" style="border-radius: 20px;">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#">
+                <img src="..\images/potatoheart.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+                Blobfish
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center me-5 pe-5" id="collapsibleNavbar">
+              <ul class="navbar-nav me-5"> 
+                <li class="nav-item">
+                  <a class="nav-link " href="..\index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="..\about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="..\games.html">Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="..\contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="..\articles.html">Articles</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <p></p>
+            </div>
+            <div class="col-md-4">
+                <h1 class="title">68 gamedev ideas</h1>
+                <p class="date-time">Jan 09, 2022 &#9900 21 min read</p>
+                <hr style="width:60%; margin: auto;">
+                <span class="content">
+                    <p>While working on my first game 
+                    <a href="https://store.steampowered.com/app/1144910/Space_Gladiators/?ref=blobfish.dev">Space Gladiators</a>
+                     in 2019, I decided to start sharing some gamedev related
+                     ideas every week in a newsletter.</p>
+                    <p>Most of those were only read by a dozen people and the
+                     emails have been sitting on my Google Drive since then.</p>
+                    <p>I still think most of those ideas are relevant. So I
+                     went through all of them, removed and updated some and
+                     compiled everything in today's post.
+                     <br><br>
+                     None of these are hard and fast truths, just ideas I got
+                     and observations I made while working on my action roguelite
+                     game. Enjoy!</p>
+                    <h2>Be careful which game you're comparing yours to</h2>
+                    <p>If you’re making a tiny roguelite and tell them “it’s
+                     influenced by
+                      <a href="https://dead-cells.com/?ref=blobfish.dev">Dead Cells</a>”,
+                     they’ll start with very high expectations.
+                     <br><br>
+                     They’ll probably end up disappointed when they find out it’s not as 
+                     good as Dead Cells.
+                     <br><br>
+                     Some of them might even get offended that you’re comparing it to a
+                      game they love.
+                    <br><br>
+                    A recent example: <a href="https://store.steampowered.com/app/924970/Back_4_Blood/?ref=blobfish.dev">Back 4 Blood</a>
+                     being constantly compared to the 
+                    <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/?ref=blobfish.dev">Left 4 Dead</a>
+                     franchise means 
+                     <a href="https://www.youtube.com/watch?v=EdRLNUGmFC8&amp;ref=blobfish.dev">players were disappointed</a>
+                     when they found out it's not as good.
+                    </p>
+                    <h2>Marketing is about getting strangers to trust you</h2>
+                    <p>Players need to trust that they’ll have fun with your game.
+                    <br><br>
+                        Recommendations from friends or influencers are powerful 
+                        because they basically circumvent the process.
+                        <br><br>
+                        Players will instantly trust your game as much as they 
+                        trust the person recommending it.
+                    </p>
+                    <h2>Your players can put up with a lot if they enjoy your game</h2>
+                    <p>It means you don’t necessarily have to fix every bug and issue 
+                        before showing it… or even releasing it.
+                        <br><br>
+                        I know that because I’ve been playing 
+                        <a href="https://www.dofus.com/?ref=blobfish.dev">Dofus</a> 
+                        on and off these last years, a game that’s been out for more 
+                        than 15 years.
+                        <br><br>
+                        There are so many broken things in the game: music tracks 
+                        that play when they shouldn’t (and disabling them works only half the time), 
+                        memory leaks that force you to restart the game every hour 
+                        or so, missing animations, an unbalanced matchmaking system…
+                        <br><br>
+                        But it’s still a very successful game with hundreds of 
+                        thousands of players.
+                    </p>
+                    <h2>Working hard on a game doesn’t mean it’ll be successful</h2>
+                    <p>You could make 1% of someone else’s effort and get better 
+                        results than them.
+                        <br><br>
+                        <a href="https://store.steampowered.com/app/657000/Rising_Hell/?ref=blobfish.dev">Rising Hell</a> 
+                        development has started more than <strong>4 years</strong> 
+                        ago and it’s made by <strong>5 people</strong>.
+                        <br><br>
+                        <a href="https://store.steampowered.com/app/1267810/Gutwhale/?ref=blobfish.dev">Gutwhale</a> 
+                        was made in <strong>1 month</strong> by <strong>3 people</strong>.
+                        <br><br>
+                        Now compare the number of reviews they each have: <strong>156 </strong>
+                        and <strong>113</strong>. (at the time I’m writing this)
+                        <br><br>
+                        Gutwhale did sell less and at a lower price than Rising Hell, 
+                        though not by that much.
+                        <br><br>
+                        But there's a massive difference in the effort that was necessary 
+                        to produce the games.
+                        <br><br>
+                        It's even more blatant if you look at games like 
+                        <a href="https://store.steampowered.com/app/915310/SNKRX/?ref=blobfish.dev">SNKRX</a>. 
+                        (1 person, 3 months, 3302 reviews)
+                    </p>
+                    <h2>Your feelings towards your game will fluctuate</h2>
+                    <p>One day you’ll think it’s a piece of crap and that it’ll never 
+                        be successful.
+                        <br><br>
+                        The next day you’ll think it’s the best thing ever.
+                        <br><br>
+                        What matters - if you want to actually finish games - is that 
+                        you don’t completely mentally give up on it during your off days.
+                    </p>
+                    <h2>Be careful about your expectations as a solo dev</h2>
+                    <p>If you’re a solo dev, you’re competing with games made by 
+                        dozens of people. 
+                        <br><br>
+                        Even if you consider only very small teams of 2 or 3 devs, 
+                        it still means that you’ll theoretically have to spend 
+                        twice or thrice the time to make the same thing.
+                        <br><br>
+                        For example, 
+                        <a href="https://store.steampowered.com/app/1037020/ScourgeBringer/?ref=blobfish.dev">Scourgebringer</a>. 
+                        Very small scope, but as far as I know it was made by 2 devs 
+                        full time during 2 years.
+                        <br><br>
+                        So you should be prepared to spend 3-4 years to develop something 
+                        of a similar quality. Even worse if you’re doing it in your free 
+                        time. 
+                        <br><br>
+                        And that’s not even considering that they’re experienced devs who 
+                        already released 
+                        <a href="https://store.steampowered.com/app/400450/NeuroVoider/?ref=blobfish.dev">a game in the same genre</a> 
+                        before.
+                    </p>
+                    <h2>Your work compounds</h2>
+                    <p>In the beginning, you have to put in a lot of effort for very little 
+                        results. 
+                        <br><br>
+                        You have to build all the back-end of your game while it’s not 
+                        even playable yet.
+                        <br><br>
+                        You post a YouTube video and you get 10 views.
+                        <br><br>
+                        But it gets easier and easier over time. 
+                        <br><br>
+                        The exact same video that took you the exact same amount of effort 
+                        to craft might bring you 5x, 10x or even 100x the results as your 
+                        audience grows.
+                    </p>
+                    <h2>Contacting YouTubers: bigger is not always better</h2>
+                    <p>Things to consider:</p>
+                    <ul>
+                        <li>Some of them have a lot of subscribers but a very tiny view and engagement count. (<strong>bad</strong>)</li>
+                        <li>Are they focusing on games in the same genre as yours (<strong>good</strong>) or do they cover a broad range of unrelated games (<strong>bad</strong>)?</li>
+                        <li>Are people watching these videos only for the host personality (<strong>bad</strong>) or to look for games to play (<strong>good</strong>)?</li>
+                    </ul>
+                    <p>Do note that I’m not saying channels centered around their host are bad. 
+                        <br><br>
+                        I’m just pointing out factors that have an impact on what kind of 
+                        exposure and financial results you can expect from working with them.
+                        <br><br>
+                        If a creator posts only no commentary gameplay videos and still gets a 
+                        lot of engagement, <strong>you know</strong> those people are here for 
+                        the game.<br><br>All of this to say: <strong>don’t overlook small 
+                        channels that have a targeted audience. </strong>
+                        <br><br>
+                        A channel with a qualified audience of 6K can generate more sales 
+                        than one with 250K subscribers. (happened to me)
+                    </p>
+                    <h2>Your game doesn't have to be a masterpiece</h2>
+                    <p>A game doesn’t have to be a masterpiece to make players happy.
+                        <br><br>
+                        People can look over balancing issues, ugly NPCs or stiff animations 
+                        if they enjoy the core loop of the game.
+                        <br><br>
+                        Don’t wait for perfection before sharing your work.
+                        <br><br>
+                        You’re probably not going to be the next Minecraft or Dead Cells 
+                        or Hollow Knight.
+                    </p>
+                    <p>But if your goal is live off your games, <strong>you don’t need to</strong>. 
+                        <br><br>
+                        Thousands of indie devs are earning a (good) living with games you’ve 
+                        never heard of.
+                    </p>
+                    <h2>The longer you work on a game, the more pressure you’ll feel</h2>
+                    <p>There are a few reasons for this:</p>
+                    <ul>
+                        <li>Your game will need to bring in more money for you to consider it a success.</li>
+                        <li>You’ll be more likely to burnout. Which will make you less productive and motivated.</li>
+                        <li>You’ll have more chance of getting caught in a <a href="https://www.derekyu.com/makegames/deathloops.html?ref=blobfish.dev">death loop</a>.</li>
+                    </ul>
+                    <p>You can avoid a whole lot of issues if you keep your scope small.</p>
+                    <h2>Every platform is just trying to win</h2>
+                    <p>For Twitter, it means putting forward the tweets that get the
+                         most engagement.<br><br>For Steam, it means showcasing the games 
+                        that are proven to convert visitors to sales.
+                        <br><br>
+                        For YouTubers, it means playing the games that generate the most 
+                        views.
+                        <br><br>
+                        What does it mean for you?
+                        <br><br>
+                        The more successful your game is, the more successful it’ll become. 
+                        <br><br>
+                        But the opposite is also true. 
+                        <br><br>
+                        If your game is unknown and hasn’t proven its worth, very few people 
+                        and platforms will take the risk of showcasing it when they have 
+                        hundreds of other games that have a proven track record.
+                    </p>
+                    <h2>Know your audience</h2>
+                    <p>You have to know who your game is for and tailor the experience to 
+                        what they like.
+                        <br><br>
+                        For example: if you’re making a gameplay focused roguelike like 
+                        <a href="https://store.steampowered.com/app/242680/Nuclear_Throne?ref=blobfish.dev">Nuclear Throne</a>, 
+                        keep the text to a minimum. 
+                        <br><br>
+                        People who play these kinds of games want action fast and will likely skip 
+                        most of the texts.
+                    </p>
+                    <h2>Make sure your game hits the key beats of your genre</h2>
+                    <p>When looking at games of the same genre, you can notice they all have 
+                        features that are different on the surface but actually serve the same 
+                        purpose.
+                        <br><br>
+                        For example, in the roguelite 
+                        <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/?ref=blobfish.dev">Slay the Spire</a> 
+                        the cards give a sense of diversity and control over your overall strategy.
+                        <br><br>
+                        This same purpose is being filled by items in 
+                        <a href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/?ref=blobfish.dev">The Binding of Isaac</a> 
+                        or weapons in 
+                        <a href="https://store.steampowered.com/app/588650/Dead_Cells/?ref=blobfish.dev">Dead Cells</a>.
+                        <br><br>
+                        Every roguelite punctuates their runs with mid-journey big challenges you 
+                        have to prepare for, such as Elites in Slay the Spire or bosses in 
+                        <a href="https://store.steampowered.com/app/1108370/Ratropolis/?ref=blobfish.dev">Ratropolis</a>.
+                        <br><br>
+                        You should make sure your game hits all the same key ideas as successful 
+                        games in your genre but in your own specific ways.</p>
+                        <h2>Look at what people do, not what they say</h2>
+                        <p>If they tell you your game is great but they play it only for an hour 
+                            and never get back into it, it means you still have work to do.
+                        </p>
+                        <h2>The biggest obstacle you'll face as a new dev</h2>
+                        <p>When you’re starting out, the biggest obstacle you’ll face is 
+                            <strong>not</strong> that people won’t like your game.
+                            <br><br>
+                            It’s that no one will know or care about it.
+                        </p>
+                        <h2>Know the focus of your game</h2>
+                        <p>Always prioritize it when you have to make a decision. 
+                            <br><br>
+                            I’m making a roguelite, so gameplay is my focus. Here’s an example 
+                            of how that idea influenced my decision.
+                            <br><br>
+                            When my characters use a shield, they hold it up in front of them. 
+                            <br><br>
+                            So it protects them from the front. Makes sense, right? 
+                            <br><br>
+                            The problem is that no one uses them because they kind of suck 
+                            compared to other items.
+                            <br><br>
+                            Having to turn the right way to protect yourself is too much of a hassle.
+                            <br><br>
+                            So I instead just made the player invulnerable from all sides. 
+                            <br><br>
+                            It’s not logical and look less realistic, but it’s better gameplay-wise.
+                        </p>
+                        <h2>Make your game technically unfair to the player</h2>
+                        <p>If you want your game to feel fair to the player, it has to be 
+                            technically unfair.
+                            <br><br>
+                            The games that feel good to play implement a lot of different 
+                            tactics that give leeway to the player. (<a href="https://twitter.com/MattThorson/status/1238338574220546049?ref=blobfish.dev">see this twitter thread</a> from Matt Thorson, creator of <a href="https://store.steampowered.com/app/504230/Celeste/?ref=blobfish.dev">Celeste</a>)
+                            <br><br>
+                            Allow them to jump out of a platform even if they’ve already started 
+                            falling from it.
+                            <br><br>
+                            Push them up a tiny bit if they tried to dash somewhere but bumped their 
+                            feet on the wall.
+                            <br><br>
+                            Make the enemy hitboxes smaller or turn them for free when they’re hitting 
+                            in the wrong direction - 
+                            <a href="https://www.youtube.com/watch?v=LtBNffzWhf4&amp;ref=blobfish.dev">like Dead Cells does</a>.
+                            <br><br>
+                            Try to understand what the player wants to do and help them out. 
+                            <br><br>
+                            If you don’t do it, your game will feel frustrating - even though it’ll 
+                            technically be fair.
+                        </p>
+                        <h2>Players care about how a game makes them feel</h2>
+                        <p>Most of them don't care that much about technicalities.
+                            <br><br>
+                            Your game might have 300 items, a dozen of worlds and hours of gameplay. 
+                            <br><br>
+                            But it might still be less appealing and less successful than a 
+                            15mn game with no content but perfect character control.
+                            <br><br>
+                            Most people will only play your game for a few dozen minutes 
+                            before deciding whether they like it or not anyway.
+                        </p>
+                        <!-- I gave up and just copied the rest of the article -->
+                        <h2>Start by making a small game</h2><p>If you start out with a huge project, <strong>you’ll be stuck for years</strong> with all the poor decisions you made while you were a beginner.<br><br>The bad code systems. <br><br>The animation style that’s too demanding and slow to create. <br><br>The poorly designed game mechanics that limit your level design possibilites.<br><br>With small games, you can <strong>create things that reflect your current level of skill </strong>at all times.<br><br>And you’ll avoid 80% of issues that show up only when your project reaches a certain size.<br><br>(I definitely wish I started out with a smaller scope for my first game)</p><h2 id="your-motivation-is-a-resource">Your motivation is a resource</h2><p>It'll deplete when you work too long on tasks that have no visible outcomes. (refactoring code, cleaning up art assets…)<br><br>It’ll fill up when you get positive feedback or see tangible progress on your game. (new enemies, new levels...)<br><br>You have to manage it correctly (just like time and money) if you want to make it to the end of your project.</p><h2 id="be-aware-of-what-your-design-choices-entail">Be aware of what your design choices entail</h2><p>The decisions you make at the beginning of a project have more impact than you think.<br><br>Say you decide your player shoud be able to attack up or down in your 2D platformer. <br><br>This alone can represent <strong>weeks of additional work</strong> and can limit how creative you can be with your level layouts.<br><br>You’ll have to make sure the player can’t cheese enemies by attacking them from below or above without them being able to defend themselves. <br><br>Your enemies will need more attacks (which also means more animation work) and more complex behavior patterns to deal with it.<br><br>Be aware of what each of your decisions entail. <br><br>Ask yourself if it’s really needed to achieve your vision before burdening yourself with more work.</p><h2 id="confidence-comes-from-objective-facts-not-mind-tricks">Confidence comes from objective facts, not mind tricks</h2><p>You trust in your ability to finish a game because you’ve finished many other projects before.<br><br>You trust that your game is fun because people you don’t know have played it and told you they liked it.<br><br>Self-confidence is built through small wins. Each of them is further evidence that you are capable of achieving the things you’re aiming for.</p><h2 id="the-more-you-win-the-easier-it-becomes-to-win">The more you win, the easier it becomes to win</h2><p>When you are unknown, you have to fight to get eyes on your games.<br><br>But once you get a track record of successes, people will <strong>want </strong>to give you their attention and money.<br><br>Platforms will feature you more. Big YouTubers will try out your games.<br><br>Just a thought, but how many copies do you think <a href="https://store.steampowered.com/app/1148650/The_Legend_of_BumBo/?ref=blobfish.dev">The Legend of Bumbo</a> would have sold if it was made by a random anonymous developer?</p><h2 id="create-the-kind-of-game-you-like-to-play">Create the kind of game you like to play</h2><p>You need to understand who your target audience is and what they want, and it’s easier if you’re part of that audience yourself.<br><br>It’ll make development more enjoyable too.</p><h2 id="you-cant-attribute-the-success-of-a-game-to-a-single-thing">You can't attribute the success of a game to a single thing</h2><p>What makes <a href="https://store.steampowered.com/app/242680/Nuclear_Throne/?ref=blobfish.dev">Nuclear Throne</a> stand out compared to all the other twin stick shooters out there?<br><br>I can’t pinpoint one specific feature that make it good. <br><br>I believe it’s a lot of small decisions and ingredients put in the right amount in the right places.</p><h2 id="fix-your-game-before-marketing-it">Fix your game before marketing it</h2><p>Let’s say you’ve shown it to a few people and they all give you the same feedback.<br><br>If you show it to more people, you’ll only get more of the same response and it won’t help you at all.<br><br>Fix it before getting new eyes on your project.</p><h2 id="make-sure-your-core-game-loop-is-fun-before-developing-it">Make sure your core game loop is fun before developing it</h2><p>You need to make sure the core loop / concept of your game is fun before going any further. <br><br>No amount of secrets, deep lore or endless customization options can fix a game not being enjoyable to interact with.<br><br>On the other hand, you could make a prototype in 2 days and have thousands of people play it even 4 years after its launch: <a href="https://juicybeast.itch.io/right-click-to-necromance?ref=blobfish.dev">Right Click to Necromance</a>.</p><h2 id="people-don%E2%80%99t-want-original-games">People don’t want original games</h2><p>They usually just want something they already like, but with a twist.</p><h2 id="there-is-more-than-one-way-to-make-a-successful-game">There is more than one way to make a successful game</h2><p>The guys from <a href="https://www.youtube.com/watch?v=WtDPNoVGZIw&amp;ref=blobfish.dev">Butterscotch Shenanigans</a> design their games iteratively and don’t plan anything in advance.<br><br><a href="https://www.youtube.com/watch?v=LlAc5sBtGkc&amp;ref=blobfish.dev">Others</a> do extensive market research before prototyping anything. <br><br>Anything can work, but you have to find the best approach for you.</p><h2 id="find-efficient-ways-to-create-replayability">Find efficient ways to create replayability</h2><p>Try to find efficient ways to incentivize the player to replay the same content over and over.<br><br>You don’t necessarily need to create thousands of different enemies and items.<br><br>In <a href="https://store.steampowered.com/app/861540/Dicey_Dungeons/?ref=blobfish.dev">Dicey Dungeons</a>, you replay the same levels with different characters. <br><br>They each have one unique mechanic and 2 to 3 different starting cards that change how you apprehend enemies. It’s just enough to keep it fresh.<br><br>In <a href="https://store.steampowered.com/app/646570/Slay_the_Spire/?ref=blobfish.dev">Slay the Spire</a>, the game makes you replay the same levels 20 times for each character through the use of <strong>Ascensions</strong>.<br><br>Everytime, one thing becomes harder. “<em>More elites</em>”. “<em>Start the run damaged</em>.”<br><br>As the dev, you just have to tweak some numbers. But it gives your players a reason to start a new run.</p><h2 id="take-feedback-with-a-grain-of-salt">Take feedback with a grain of salt</h2><p>A lot of people will tell you what they think you should do<strong> </strong>when they don’t have a clue themselves.<br><br>I’ve come across devs on reddit asking how they should market their game…<br>...and being answered to make business cards. What?</p><h2 id="steam-probably-wont-give-you-lots-of-free-traffic">Steam (probably) won't give you lots of free traffic</h2><p>Some people think publishing a game on Steam gives you loads of free traffic and sales.<br><br>Truth is... if you don’t bring in sales from external sources Steam does practically nothing for you.<br><br>But get some traction first and Steam will make your game <strong><em>exponentially </em></strong>more successful. <br><br>Like <strong>10x or even 100x</strong> as successful. <br><br>Because Steam only wants to promote winners a.k.a. the games that’ll bring in the most revenue.</p><h2 id="getting-attention-is-hard">Getting attention is hard</h2><p>Getting attention on your projects online is way harder than you probably think if you’ve never tried it yourself. <br><br>It’s not as simple as making YouTube videos, creating devlogs or making cool gifs on Twitter. <br><br>Thousands of people are already doing that and only a few are getting actual traction.<br><br>It takes a lot of time and effort (which you won’t spend on improving your game) to understand what works, experiment with it and translate that into sales.<br><br>You could actually be better off focusing all of your efforts into making a game with a potentially viral concept and bet on luck and timing to get players: <a href="https://store.steampowered.com/app/915310/SNKRX/?ref=blobfish.dev">SNKRX</a>, <a href="https://store.steampowered.com/app/1794680/Vampire_Survivors/?ref=blobfish.dev">Vampire Survivors</a>, <a href="https://store.steampowered.com/app/1349230/5D_Chess_With_Multiverse_Time_Travel/?ref=blobfish.dev">5D Chess</a>.</p><h2 id="get-other-people-to-play-your-game">Get other people to play your game</h2><p>You should get other people to play your game as soon as you can. <br><br>Some things seem obvious to you but are not for other people. <br><br>Some of your ideas suck but you won’t know which ones until you watch someone else play.<br><br>Your game will improve exponentially faster with external player feedback.<br><br>So release an early demo, send it to your coworkers, make it early access. No one is going to steal your idea.</p><h2 id="take-advantage-of-the-low-hanging-fruits">Take advantage of the low-hanging fruits</h2><p>There are things in your game that need very little effort to make but can improve greatly the player’s experience.<br><br>For instance, in <a href="https://store.steampowered.com/app/947300/Grim_Nights/?ref=blobfish.dev">Grim Nights</a> your units have silly names. It’s easy to do but it makes the game <a href="https://www.youtube.com/watch?v=Y2pJkW5vTYg&amp;ref=blobfish.dev">way funnier for the players</a>.</p><h2 id="players-find-issues-not-solutions">Players find issues, not solutions</h2><p>Your players are experts at pinpointing the issues of your game, but they don’t always know the right solutions. It’s your job to find them.<br><br>For example, someone might tell you that “the game feels too repetitive, you need to add more enemies”. <br><br>This is great feedback. But you could fix this issue in many ways: making enemies work better together with new skills, restructuring how your run unfolds (in the case of a roguelite) or even adding new characters instead.<br><br>A lot of times, the solution might be to tweak things that the player isn’t even aware of. <br><br>If your game is feeling too hard and frustrating, you could give the player a few frames of invulnerability while colliding with a foe or add half a second before the enemies can attack.</p><h2 id="polish-your-early-game-content">Polish your early game content</h2><p>You should spend most of your time working on polishing your early game content.<br><br>This is what the majority of people will see. That’s when they’ll decide whether or not they like your game.<br><br>Don’t spend 2 months working on an end game boss that only 1% of your playerbase will ever see. <br><br>Make sure instead that the basic enemies are fun to fight.</p><h2 id="triple-down-on-what-makes-your-game-unique">Triple down on what makes your game unique</h2><p>Try to understand why your biggest players find your game fun and enhance those things.<br><br>Watch them play, talk with them and ask them questions. You’ll get invaluable information.<br><br>At the same time, you can also ask people why they didn’t like it. <br><br>If it doesn’t compromise the core of your game, fixing those issues could help more people enter your playerbase. <br><br>But be aware that some of them might just not be part of your audience.</p><h2 id="be-aware-of-your-bias-towards-your-game-as-the-dev">Be aware of your bias towards your game as the dev</h2><p>You spent more time than anyone else playing it so you can’t know whether the difficulty is right or if it’s actually too repetitive before you see someone else play it.<br><br>Don’t make big changes before getting the opinion of your players.</p><h2 id="dont-make-your-game-tedious-to-play">Don't make your game tedious to play</h2><p>Don't obfuscate information from the player if it's just making it tedious for them.<br><br>Making them memorize or calculate something on their own when it could just be displayed is frustrating.<br><br>It could mean:</p><ul><li>Showing how much damage they do after all buffs.</li><li>Updating the “unknown effect” description of next potions of the same color after they have discovered one of them.</li><li>Allowing them to see their deck while doing an operation such as removing or upgrading a card.</li></ul><p>This does not apply if it’s part of the gameplay.</p><h2 id="create-replayability-by-having-multiple-layers-of-randomness">Create replayability by having multiple layers of randomness</h2><p>Picking out random rooms from a pool is only the first layer. <br><br>Randomizing the treasure, the enemies and their level, the presence of traps or walls, the effects of items etc. is what create infinite possibilities and unique runs.<br><br>But do it within preset boundaries to avoid creating complete chaos. <br><br>Having too much unsupervised randomness can be as bad as having too little.</p><h2 id="when-to-listen-to-player-feedback">When to listen to player feedback</h2><p>If one player pinpoints an issue, it’s not always a big deal. <br><br>They have their own bias and it might not be the best thing for your game to change it.<br><br>If a lot of them pinpoint the same issue, it becomes your problem. <br><br>You have to put your emotions aside and fix it.</p><h2 id="making-a-game-is-about-people">Making a game is about people</h2><p>Everything you do in a game is meant to make the player feel something.<br><br>Which is why I think empathy is one of the most important skills to develop as a gamedev.<br><br>The most complex technology and the best looking art don’t matter if the game isn’t built with the player’s experience in mind.</p><h2 id="addictiveness-is-created-through-balance">Addictiveness is created through balance</h2><p>You have to give rewards to the player at the right times in the right amount to keep them interested.<br><br>But give them too much and they’ll become desensitized.</p><h2 id="basic-issues-are-hard-to-see-as-the-dev">Basic issues are hard to see as the dev</h2><p>Basic issues will become more and more invisible to you the longer you work on your game. <br><br>That’s why you need to constantly have new players giving you feedback.</p><h2 id="start-your-day-off-with-easy-tasks">Start your day off with easy tasks</h2><p>It'll help you get momentum.<br><br>Wash the dishes, fix a simple bug and update a sprite before tackling a complex new feature.<br><br>You could even go as far as saving the easy tasks just for this.<br><br>It makes getting to work less intimidating.</p><h2 id="copying-things">Copying things</h2><p>If you copy things from a lot of games, people call it inspiration. <br><br>If you copy things from one game only, people call it a rip-off. <br><br>That’s why <a href="https://www.youtube.com/watch?v=ArsAhPTdbuU&amp;ref=blobfish.dev">Enchanted Portals</a> got a lot of backlash because of its <a href="https://store.steampowered.com/app/268910/Cuphead/?ref=blobfish.dev">Cuphead</a> inspiration.<br><br>Unfortunately the game never got released so we'll never know how much that would have affected its success.<br><br>Some people seem turned off by it while others are happy to have more content to play.</p><h2 id="focus-on-the-right-things">Focus on the right things</h2><p>You could spend your time trying to optimize your bank fees, working on small parts of your code that don’t matter or trying to find the best website to post your devlogs on.<br><br>Or you could spend your time actually finishing your games, getting honest feedback and learning more about game design and what is actually needed to make a game fun and successful.<br><br>If you do the latter, you’ll get exponential results over time and you won’t have to worry about the little things.</p><h2 id="failing-is-the-default">Failing is the default...</h2><p>The games that succeed financially are the exception, not the rule.<br><br>Most games never get finished. And most games that do get finished don’t make any money.<br><br>We only ever hear about the successful ones and it gives us a biased perspective on the market.</p><h2 id="but-most-people-arent-trying-that-hard">...but most people aren't trying that hard</h2><p>Most people are not that dedicated to making a financially successful game.<br><br>If you’re:</p><ol><li>Seeing your project through to the end and not giving up,</li><li>Putting effort into polishing it,</li><li>Committed to improving your skills,</li><li>Listening to your players to iterate on your ideas,</li><li>And understanding where your game fits on the market...</li></ol><p>I believe you’re actually ahead of 99% of other projects already and you’re only competing with a fraction of them.</p><h2 id="using-willpower-doesnt-work-in-the-long-run">Using willpower doesn't work in the long run</h2><p>Instead, change up your environment so you don’t have to use any willpower.</p><h2 id="polishing-a-game-takes-as-much-time-as-making-it">Polishing a game takes as much time as making it</h2><p>At some point during development, your game will look like it’s done. <br><br>The main systems will be in place. The graphics will look almost finalized. <br><br>That’s when you’ll think you’re 90% done - when you’re actually only halfway there.<br><br>Polishing a game takes at least as much time as making it in the first place.</p><h2 id="compare-your-work-over-longer-periods-to-see-your-progress">Compare your work over longer periods to see your progress</h2><p>When doing something every day, you don’t really notice your progress. <br><br>But compare your current work to what you were doing a year ago and you’ll see how much you’ve improved. <br><br>That became really clear to me when I redesigned a bunch of enemies I had made when first starting out.<br><br>It’s always a good thing to look at when you feel like you’re just treading water.</p><h2 id="being-too-dependent-on-specific-tools-can-be-dangerous">Being too dependent on specific tools can be dangerous</h2><p>It’s dangerous to be entirely dependent on specific tools if you want to build a sustainable business.<br><br>I’m using the Gamemaker Studio 2 engine. Due to server issues on their side, a lot of users could not log into their account for the past 3 days.<br><br>Which means they <strong>could not access their project</strong> and <strong>could not work</strong> at all during that time. <br><br>It’s the same thing if you’re basing your whole business on one platform: YouTube, Steam, Twitter… any of those companies could decide from one day to the next to delete your stuff. <br><br>Ideally, you should structure your business so that any one platform / person / company <strong>should not be able to destroy it</strong> if they just decide to.</p><h2 id="do-you-like-game-dev-or-just-the-idea-of-doing-it">Do you like game dev or just the idea of doing it?</h2><p>Should you try to make a career out of indie game development?<br><br>There’s an important distinction to make here. <br><br>Do you like the <strong>idea</strong> of being an indie dev or do you like <strong>actually doing it</strong>?<br><br>Personally, I like the idea of being an artificial intelligence (AI) researcher and professor. <br><br>I think it’s an important field for the future and I’d surely enjoy the status and prestige it gives.<br><br>When it comes to actually studying AI though, <strong>I’m bored out of my mind</strong>. So I’m not pursuing that as a career.<br><br>I don’t think indie dev is particularly prestigious. A lot of people see you as a kid playing games. <br><br>But I (mostly) enjoy doing it day to day. I’m excited to see my projects come to life and I love watching people play my games.<br><br>Basically, what I’m trying to say is: <strong>ask yourself if you’re doing it for the right reasons. </strong><br><br>Are you excited about <strong>making </strong>games? <br><br>Or are you excited about <strong>telling people</strong> you’re a game developer?</p><h2 id="making-a-game-is-a-mix-of-fun-and-boring-work">Making a game is a mix of fun and boring work</h2><p>Fun:</p><ul><li>Coming up with ideas and concepts</li><li>Designing the game</li><li>Coding the initial main systems</li><li>Etc.</li></ul><p>Boring:</p><ul><li>Adding content (depending on your interests)</li><li>Polishing stuff</li><li>Fixing bugs &amp; glitches</li><li>Menus &amp; UI</li><li>Managing different input devices and resolutions</li><li>Remapping controls</li><li>Localization</li><li>Etc.</li></ul><p>I believe a big reason why people love doing gamejams is that you only have to make the fun parts of a game before moving on.<br><br>But you need to be able to do the boring work if you want to publish a commercial game.</p><h2 id="finishing-your-projects-is-hard">Finishing your projects is hard</h2><p>As an indie game developer, I believe the hardest and most important skill to acquire is to finish a project even after you’ve lost interest in it.<br><br>Especially when you realize no one really cares if you complete your game or not. <br><br>You have no deadlines. No boss. No pressure. Only self-motivation.<br><br>Just by finishing a game, you’re ahead of most people who want to get into that field.<br><br>You should be proud of yourself whether or not it brings you the external success you wished for.</p><h2 id="getting-an-idea-is-easy-implementing-it-is-hard">Getting an idea is easy, implementing it is hard</h2><p>When making a game, the “creativity” part only represents a fraction of the project. <br>Getting a good idea takes a few minutes, implementing it can take days.</p><h2 id="being-a-good-programmer-being-a-good-solo-dev">Being a good programmer =/= being a good solo dev</h2><p>The difficulty of making a financially successful indie game on your own doesn’t usually come from hard technical challenges.<br><br>You’ll more likely struggle in:</p><ul><li>The <strong>project management</strong> aspects (hitting deadlines, motivation, discipline, time management, finances…)</li><li>The sheer<strong> amount of content</strong> you have to create</li><li>The amount of<strong> different skills</strong> you have to learn and be good at</li><li>The <strong>business and marketing </strong>aspects (letting people know your game exists and making them care)</li><li>… and putting it all together to make a <strong>good polished game</strong> that actually has a place in the market.</li></ul><p>It’s why being an excellent programmer doesn’t automatically translate to being an excellent indie developer.</p><h2 id="always-pick-the-simplest-option">Always pick the simplest option</h2><p>When having to choose between multiple options (engines, ideas, languages…), always pick the simpler one. <br><br>Bringing a game to life is difficult enough that you should reduce complexity where you can.<br><br>This is one of the reasons why <a href="https://www.youtube.com/watch?v=apfNODay1_s&amp;ref=blobfish.dev">Rogue Legacy could be made in only 1 year and a half</a>.</p><h2 id="a-small-motivation-tip">A small motivation tip</h2><p>Do the hard parts of your work when you’re feeling motivated and energized. <br><br>Do the easy and exciting parts when you’re having a rough day.</p><h2 id="dont-tackle-too-many-challenges-at-once">Don't tackle too many challenges at once</h2><p>Say you have no experience in game development. <br><br>You don’t have an artistic background, you don’t know how to code and you never played an instrument in your life.<br><br>If you start out by trying to create a MMORPG in a game engine you know nothing about… <br><br>You’ll almost certainly become overwhelmed by the sheer amount of information you have to learn to keep moving forward.<br><br>Every time you start a new project, pick only one or two new things to learn.</p><h2 id="making-a-game-is-similar-to-playing-a-mmorpg">Making a game is similar to playing a MMORPG</h2><p>You’re making a plan on what you want to accomplish. Then you’re grinding to make it happen.<br><br>The difference is that it’s a lot easier in a game than in real life.<br><br>Because a game designer is making sure you’re getting rewarded exactly at the right times to feel like you’re progressing.<br><br>In your work, you might go through days and weeks of efforts without rewards.<br><br>But once they come (as praise, sales or simply players enjoying your game), they’re a lot more meaningful and satisfying than the former.</p><h2 id="discipline-is-not-a-personality-trait">Discipline is not a personality trait</h2><p>It’s mostly just dependent on your environment.<br><br>If you have:</p><ul><li>A laggy computer,</li><li>People watching Netflix around you all the time</li><li>And friends constantly pinging you to join them in the latest MMORPG...</li></ul><p>Then it’s only a matter of time before you stop working on your game.<br><br>But if you:</p><ul><li>Have a great computer,</li><li>Live with people that are working on their own projects,</li><li>And you’re running out of cash to put food on the table…</li></ul><p>Working on your project will be a piece of cake.</p><h2 id="constraints-foster-productivity">Constraints foster productivity</h2><p>If you just set out to <em>“make a game”</em>, you will likely waste a lot of time contemplating all the different options and things you could do.<br><br>Instead, you could decide to make a 10 minutes long 2D platformer using <a href="https://www.yoyogames.com/gamemaker?ref=blobfish.dev">GameMaker Studio 2</a> that’ll get published on <a href="https://itch.io/?ref=blobfish.dev">itch.io</a> in 2 weeks.<br><br>That would make it much easier to know what you have to do now in order to move forward.</p><h2 id="reduce-your-workload-where-you-can">Reduce your workload where you can</h2><p>Not all work is created equal.<br><br>You might think it looks cool to have 15 frames idle animations instead of 6 frames for your NPCs. <br><br>But the players don’t care that much and you’ll waste hours that could have been better spent.</p><h2 id="the-bigger-your-project-becomes-the-harder-it%E2%80%99ll-be-to-work-with-it">The bigger your project becomes, the harder it’ll be to work with it</h2><p>Tracking down bugs gets more difficult. Compiling takes more time. <br><br>Overall, a lot of things become slower and more annoying to do.</p><h2 id="your-resources-are-limited">Your resources are limited</h2><p>Every functionality you choose to add into your game comes at the expense of something else.<br><br>Say you’re spending a week crafting beautiful menus while your players are asking you to fix game-breaking bugs or to add new enemies.<br><br>Even though your game might become 1% better because of those menus, it could have become 20% more fun in the same time frame had you worked on the latter issues instead.<br><br>Anyone could make a successful game with unlimited time, resources and feedback. But no one actually has that.<br><br>The real challenge of gamedev is knowing where to spend your energy and what you should disregard completely.</p>
+                </span>
+                <span class="article-end d-flex flex-column align-items-center">
+                    <hr>
+                    <h4>Enjoyed this post? Subscribe for more!</h4>
+                    <p>Join our newsletter to get the latest updates on our games, behind-the-scenes content, and more!</p>
+                    <button type="button" class="btn-sub" value="SUBMIT"><a href="..\subscribe.html" class="link">Subscribe</a></button>
+                </span>
+                <hr>
+                <span class="align-items-center d-flex flex-column">
+                    <h3 style="color: #a3a3a3;">Published By:</h3>
+                    <img src="..\images/Egg_Thumbnail.png" alt="Avatar Logo" style="width:50px;" class="rounded-pill"> 
+                </span>
+                
+
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <hr style="width: 40%;  margin: auto;">
+    <br>
+    <footer class="footer p-5 footer-background">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3">
+                  <h2>Blobfish Games</h2>
+              </div>
+              <div class="col-md-3 d-flex flex-column">
+                  <img src="..\images/potatoheart.png" alt="Avatar Logo" style="width:150px;" class="img-fluid">
+              </div>
+              <div class="col-md-3">
+                  <h5>Contact Us</h5>
+                  <ul class="list-unstyled">
+                      <li>Email: blobfish@blobfishgames.com</li>
+                      <li>Phone: +1233567890</li>
+                      <li>Address: </li>
+                  </ul>
+              </div>
+              <div class="col-md-3">
+                  <h5>Follow Us</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="https://twitter.com/blobfishdev" target="_blank" class="link">Twitter</a></li>
+                      <li><a href="https://www.facebook.com/sharer.php?u=https://www.blobfish.dev" target="_blank" class="link">Facebook</a></li>
+                  </ul>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="col-md-6">
+                  <p>&copy; 2024 Blobfish Games. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-end">
+                  <ul class="list-inline footer-links">
+                      <li class="list-inline-item">
+                          <a href="#" class="text-white">
+                              Privacy Policy
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#" class="text-white">
+                              Terms of Service
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="#" class="text-white">
+                              Sitemap
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>
